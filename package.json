@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "if not exist dist mkdir dist && if exist index.html copy index.html dist && if exist styles.css copy styles.css dist && if exist main.js copy main.js dist",
     "vercel-build": "npm run build"
   },
   "author": "Mah",
